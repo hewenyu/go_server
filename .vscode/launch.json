@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Launch test",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}"
+        },
+    {
+        "name": "Launch file",
+        "type": "go",
+        "request": "launch",
+        "mode": "debug",
+        "program": "${file}",
+        // "cwd": "${workspaceFolder}"
+    },
+    // debug
+        {
+            "name": "Launch Server",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/main.go"
+        },
+        // release
+        {
+            "name": "Launch Server release",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go"
+        }
+    ]
+}
